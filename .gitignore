@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+charash_output/
+*_charash.txt
+*_charash_*.txt
+*.report.json
+private/
+*.html
+*.htm
+*_files/
+!web/index.html
+
+tests/results/
+
+tests/coc7_results/
+
+# Local working notes; not part of the public repository.
+項目対応表.md
