@@ -92,3 +92,15 @@ footer p { margin: 0; font-size: 10px; color: var(--muted); }
 }
 
 .edition-choice{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;margin-bottom:18px;font-size:12px}.edition-choice select{font:inherit;padding:6px 24px 6px 10px;background:#fff;border:1px solid #aaa69d;border-radius:2px;color:#292927}.edition-choice span{font-size:11px;color:var(--muted)}.version-note{margin-top:14px!important}select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.import-warning {
+  color: #a12622;
+  background: #fff1ef;
+  border-left: 4px solid #b02d26;
+  padding: 14px 16px;
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 1.85;
+}
+.import-warning strong { display: block; font-size: 14px; }
+.import-warning p { margin: 6px 0 0; }

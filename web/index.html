@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-qxY3Ndv1vI/ohSEEXfXl7C5WntFvMhVYYp7lbGmYSvY='; style-src 'sha256-PTwP5uZM8T77aEE5tdjBD6hD188rCYoLP9eaNTO8+lg='; connect-src 'none'; img-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-qxY3Ndv1vI/ohSEEXfXl7C5WntFvMhVYYp7lbGmYSvY='; style-src 'sha256-xe51LwZIixtFSGzcKdy11h+6GAF+04WnyBWXSwgqufE='; connect-src 'none'; img-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>いあきゃら → キャラッシュ｜キャラクターシート変換</title>
 <style>:root {
   color-scheme: light;
@@ -100,6 +100,18 @@ footer p { margin: 0; font-size: 10px; color: var(--muted); }
 }
 
 .edition-choice{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;margin-bottom:18px;font-size:12px}.edition-choice select{font:inherit;padding:6px 24px 6px 10px;background:#fff;border:1px solid #aaa69d;border-radius:2px;color:#292927}.edition-choice span{font-size:11px;color:var(--muted)}.version-note{margin-top:14px!important}select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.import-warning {
+  color: #a12622;
+  background: #fff1ef;
+  border-left: 4px solid #b02d26;
+  padding: 14px 16px;
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 1.85;
+}
+.import-warning strong { display: block; font-size: 14px; }
+.import-warning p { margin: 6px 0 0; }
 </style>
 
 
@@ -125,6 +137,10 @@ footer p { margin: 0; font-size: 10px; color: var(--muted); }
       <label class="file-button" for="files">ファイルを選ぶ</label>
       <input id="files" type="file" accept=".html,.htm,text/html" multiple>
     </section>
+    <div class="import-warning" role="note" aria-label="ステータスの一時増加分についての重要な注意">
+      <strong>重要：ステータスの一時増加分は、取り込み後に必ず確認してください。</strong>
+      <p>いあきゃらの閲覧HTMLからは、一時的な増加・減少の内訳を正しく取得できません。表示中の数値を「元の値」として移すため、キャラッシュへの取り込み後に、能力値と一時増加分を確認・修正してください。</p>
+    </div>
     <div class="selection-row">
       <p id="selection">ファイル未選択</p>
       <button id="convert" type="button" disabled>変換する <span aria-hidden="true">→</span></button>
