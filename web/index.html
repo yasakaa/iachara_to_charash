@@ -141,6 +141,10 @@ footer p { margin: 0; font-size: 10px; color: var(--muted); }
       <strong>重要：ステータスの一時増加分は、取り込み後に必ず確認してください。</strong>
       <p>いあきゃらの閲覧HTMLからは、一時的な増加・減少の内訳を正しく取得できません。表示中の数値を「元の値」として移すため、キャラッシュへの取り込み後に、能力値と一時増加分を確認・修正してください。</p>
     </div>
+    <div class="import-warning record-warning" role="note" aria-label="通過シナリオと遭遇した存在のメモについての注意">
+      <strong>通過シナリオ・遭遇した存在のメモは、本文を表示してから保存してください。</strong>
+      <p>「ここをクリックして内容を見る」が表示されたままのHTMLからは、メモ本文を取得できません。いあきゃらで「通過したシナリオ」「遭遇した超自然の存在」の各欄を開き、さらに「ここをクリックして内容を見る」も押して、本文が見える状態にしてからHTMLを保存してください。</p>
+    </div>
     <div class="selection-row">
       <p id="selection">ファイル未選択</p>
       <button id="convert" type="button" disabled>変換する <span aria-hidden="true">→</span></button>
@@ -158,7 +162,7 @@ footer p { margin: 0; font-size: 10px; color: var(--muted); }
         <li>ここでファイルを選び、<strong>変換する</strong>を押す。</li>
         <li>TXTを保存し、キャラッシュの一覧にある<strong>歯車 → インポート</strong>から取り込む。</li>
       </ol>
-      <p>必要な記録は開いてから保存してください。非表示の技能は出力しません。独自の初期値や補正がある技能は、表示しておいてください。</p>
+      <p>記録欄を開き、「ここをクリックして内容を見る」も押して、本文を表示してから保存してください。非表示の技能は出力しません。独自の初期値や補正がある技能は、表示しておいてください。</p>
     </section>
     <section class="after-import">
       <h2>取り込んだあとに</h2>
